@@ -1,0 +1,18 @@
+nav#ilpMainNav.navbar.navbar-dark.bg-inverse(role="navigation")
+  div.nav.navbar-nav
+      a.navbar-brand(ui-sref="home")  
+        img#logo(alt="brand" src='assets/images/nsf_logo_color.png')
+        ILP 
+      a.nav-item.nav-link(ui-sref-active='active' ui-sref="ilp") ILP
+      a.nav-item.nav-link(ui-sref-active='active' ui-sref="feed") Feed
+      a.nav-item(href="https://docs.google.com/forms/d/1J75mNObL_YEUMqMn0yRIiGbwjCKfAgfoGI1tv4eQ3RM/viewform" target="_blank") Feedback?
+      ul.nav.navbar-nav.navbar-right#loggedin
+        li.nav-item.user.dropdown
+          a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded = "false" ui-sref="logout")
+            img(ng-src='assets/images/staff/{{vm.user.thumbnail}}' )
+            span.username &nbsp; {{ vm.user.name }} 
+              ul.dropdown-menu
+                li
+                  a(ui-sref="logout") Logout
+                li
+                  a User Setup

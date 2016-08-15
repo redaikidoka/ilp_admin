@@ -1,0 +1,74 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here. 
+ *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
+ */
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.thumbnail {
+  height: 200px; }
+  .thumbnail img.pull-right {
+    width: 50px; }
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif; }
+
+body.home {
+  background: url("/assets/images/tea.JPG") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+h1, h2, h3, h4, h5, label {
+  font-family: 'Open Sans', sans-serif; }
+
+div.jumbotron {
+  background-color: #00D9C7; }
+
+.status_icon {
+  color: #44b3aa; }
+
+.collapse {
+  height: auto;
+  width: auto; }
+
+.collapse.height {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+
+.collapse.width {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.35s ease;
+  -moz-transition: width 0.35s ease;
+  -o-transition: width 0.35s ease;
+  transition: width 0.35s ease; }
+
+.collapse.in.width {
+  width: auto; }
+
+.collapse.in.height {
+  height: auto; }
+
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
