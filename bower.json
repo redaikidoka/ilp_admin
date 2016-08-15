@@ -1,6 +1,18 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+  "name": "ilp_admin",
+  "description": "ILP Administrative interface",
+  "main": "index.html",
+  "authors": [
+    "Pol Stafford <redaikidoka@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/redaikidoka/ilp_admin",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
-
