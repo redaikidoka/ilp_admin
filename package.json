@@ -1,7 +1,7 @@
 {
-  "name": "angular2-seed",
-  "version": "1.0.0",
-  "description": "A simple starter Angular2 project",
+  "name": "ilp_admin",
+  "version": "0.0.1",
+  "description": "ILP admin panel based on angular2seedwebpack",
   "scripts": {
     "typings-install": "typings install",
     "postinstall": "npm run typings-install",
@@ -11,8 +11,8 @@
     "start": "npm run server"
   },
   "contributors": [
-    "Rob Wormald <robwormald@gmail.com>",
-    "PatrickJS <github@gdi2290.com>"
+    "Pol Stafford <dev@celttech.com>",
+    "Steven < >"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -50,16 +50,14 @@
   },
   "keywords": [
     "Angular2",
-    "angular2-seed",
+    "Individual Learning Plan",
     "official angular 2 seed",
     "official angular2 seed"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular2-seed.git"
+    "url": "git+https://github.com/redaikidoka/ilp_admin"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular2-seed/issues"
-  },
-  "homepage": "https://github.com/angular/angular2-seed#readme"
-}
+    "url": "https://github.com/redaikidoka/ilp_admin/issues"
+  }
