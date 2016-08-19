@@ -1,0 +1,12 @@
+nav
+	a( [routerLink]="['/']") Home
+	span &nbsp;|&nbsp;
+	a([routerLink]="['/about']") About
+	span &nbsp;|&nbsp;
+	a( [routerLink]="['/github', 'angular']") Github Repos
+
+main
+	router-outlet
+
+footer
+	p  © 2016
