@@ -2,10 +2,8 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'navbar',
-  styleUrls: ['./navbar.css'],
+  styleUrls: ['./navbar.scss'],
   templateUrl: './navbar.pug'
 })
 export class Navbar {
 }
-
-
