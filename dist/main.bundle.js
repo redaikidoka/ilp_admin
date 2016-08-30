@@ -4610,8 +4610,8 @@ webpackJsonp([2],{
 	    About = __decorate([
 	        core_1.Component({
 	            selector: 'about',
-	            styles: [__webpack_require__(745)],
-	            template: __webpack_require__(713)
+	            styles: [__webpack_require__(715)],
+	            template: __webpack_require__(718)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], About);
@@ -4655,8 +4655,8 @@ webpackJsonp([2],{
 	    RepoBrowser = __decorate([
 	        core_1.Component({
 	            selector: 'repo-browser',
-	            template: __webpack_require__(714),
-	            styles: [__webpack_require__(746)]
+	            template: __webpack_require__(719),
+	            styles: [__webpack_require__(750)]
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof github_1.Github !== 'undefined' && github_1.Github) === 'function' && _b) || Object])
 	    ], RepoBrowser);
@@ -4707,8 +4707,8 @@ webpackJsonp([2],{
 	    RepoDetail = __decorate([
 	        core_1.Component({
 	            selector: 'repo-detail',
-	            styles: [__webpack_require__(747)],
-	            template: __webpack_require__(715)
+	            styles: [__webpack_require__(751)],
+	            template: __webpack_require__(720)
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof github_1.Github !== 'undefined' && github_1.Github) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _c) || Object])
 	    ], RepoDetail);
@@ -4753,8 +4753,8 @@ webpackJsonp([2],{
 	    RepoList = __decorate([
 	        core_1.Component({
 	            selector: 'repo-list',
-	            styles: [__webpack_require__(748)],
-	            template: __webpack_require__(716),
+	            styles: [__webpack_require__(752)],
+	            template: __webpack_require__(721),
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof github_1.Github !== 'undefined' && github_1.Github) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object])
 	    ], RepoList);
@@ -4786,8 +4786,8 @@ webpackJsonp([2],{
 	    Home = __decorate([
 	        core_1.Component({
 	            selector: 'home',
-	            styles: [__webpack_require__(749)],
-	            template: __webpack_require__(712)
+	            styles: [__webpack_require__(716)],
+	            template: __webpack_require__(713)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], Home);
@@ -5034,6 +5034,7 @@ webpackJsonp([2],{
 	var http_1 = __webpack_require__(236);
 	var about_1 = __webpack_require__(387);
 	var home_1 = __webpack_require__(391);
+	var navbar_1 = __webpack_require__(549);
 	var repo_browser_1 = __webpack_require__(388);
 	var repo_list_1 = __webpack_require__(390);
 	var repo_detail_1 = __webpack_require__(389);
@@ -5043,7 +5044,7 @@ webpackJsonp([2],{
 	    }
 	    AppModule = __decorate([
 	        core_1.NgModule({
-	            declarations: [app_1.AppComponent, about_1.About, repo_browser_1.RepoBrowser, repo_list_1.RepoList, repo_detail_1.RepoDetail, home_1.Home],
+	            declarations: [app_1.AppComponent, about_1.About, repo_browser_1.RepoBrowser, repo_list_1.RepoList, repo_detail_1.RepoDetail, home_1.Home, navbar_1.Navbar],
 	            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(app_routes_1.rootRouterConfig)],
 	            providers: [github_1.Github, { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }],
 	            bootstrap: [app_1.AppComponent]
@@ -5105,7 +5106,8 @@ webpackJsonp([2],{
 	    AppComponent = __decorate([
 	        core_1.Component({
 	            selector: 'app',
-	            template: __webpack_require__(711),
+	            styles: [__webpack_require__(756)],
+	            template: __webpack_require__(712),
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], AppComponent);
@@ -5116,80 +5118,133 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 711:
-/***/ function(module, exports) {
+/***/ 549:
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "";
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(1);
+	var Navbar = (function () {
+	    function Navbar() {
+	    }
+	    Navbar = __decorate([
+	        core_1.Component({
+	            selector: 'navbar',
+	            styles: [__webpack_require__(717)],
+	            template: __webpack_require__(714)
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], Navbar);
+	    return Navbar;
+	}());
+	exports.Navbar = Navbar;
+	
 
 /***/ },
 
 /***/ 712:
 /***/ function(module, exports) {
 
-	module.exports = "<h3>HOME WE ARE, YES?</h3><p>Welcoming you I am. :)</p>";
+	module.exports = "<navbar></navbar><main><router-outlet></router-outlet></main><footer><p> © 2016</p></footer>";
 
 /***/ },
 
 /***/ 713:
 /***/ function(module, exports) {
 
-	module.exports = "<h3>About Component</h3>\n<p>This is the about component!</p>"
+	module.exports = "<h3>I AM THE DASHBOARD. BEHOLD MY WONDERS</h3>";
 
 /***/ },
 
 /***/ 714:
 /***/ function(module, exports) {
 
-	module.exports = "<h3>GitHub Browser</h3>\n\n<input type=\"text\" #repoName placeholder=\"Search Github Orgs\">\n<button (click)=\"searchForOrg(repoName.value)\">Search Orgs</button>\n\n<router-outlet></router-outlet>\n"
+	module.exports = "<div id=\"ilpMainNav\"><nav class=\"navbar navbar-dark bg-inverse\" role=\"navigation\"><a class=\"navbar-brand\"> <img id=\"logo\" alt=\"brand\" src=\"assets/nsf_logo_color.png\"/></a><ul class=\"nav navbar-nav\"><li class=\"nav-item\"><a class=\"nav-link selected\">Dashboard</a></li><li class=\"nav-item\"><a class=\"nav-link\">School Years</a></li><li class=\"nav-item disabled\"><a class=\"nav-link\">Stuff</a></li><li class=\"nav-item\"><a class=\"nav-link\" href=\"https://docs.google.com/forms/d/1J75mNObL_YEUMqMn0yRIiGbwjCKfAgfoGI1tv4eQ3RM/viewform\" target=\"_blank\"> Problem?</a></li></ul></nav></div>";
 
 /***/ },
 
 /***/ 715:
 /***/ function(module, exports) {
 
-	module.exports = "<h2>{{ repoDetails.full_name }}</h2>\n\n<pre>this.repoDetails = {{ repoDetails | json }}</pre>\n"
+	module.exports = ""
 
 /***/ },
 
 /***/ 716:
 /***/ function(module, exports) {
 
+	module.exports = ""
+
+/***/ },
+
+/***/ 717:
+/***/ function(module, exports) {
+
+	module.exports = "#ilpMainNav nav.navbar {\n  padding: 0.5rem 0.5rem 0.5rem 0;\n  border-radius: 0; }\n\n#ilpMainNav nav.bg-inverse {\n  background-color: #44b3aa;\n  color: #5D0E77; }\n\n@font-face {\n  #ilpMainNav {\n    font-family: 'Open Sans'; } }\n\n#ilpMainNav .navbar-brand img#logo {\n  height: 48px;\n  width: 48px;\n  margin: -3px 8px -6px 6px; }\n\n#ilpMainNav .navbar-collapse {\n  padding-right: 0; }\n\n#ilpMainNav li.nav-item {\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 18px;\n  line-height: 32px;\n  text-transform: uppercase;\n  padding: 7px 14px 14px 14px !important;\n  margin: -7px 0 -10px 0 !important;\n  border-right: 1px solid rgba(0, 0, 0, 0.1); }\n  #ilpMainNav li.nav-item a {\n    color: #5D0E77;\n    transition: color 0.5s;\n    background: none;\n    padding: 12px !important; }\n  #ilpMainNav li.nav-item a:hover {\n    color: #FBFBFB;\n    text-decoration: none;\n    background: none;\n    text-shadow: none;\n    box-shadow: none; }\n  #ilpMainNav li.nav-item a:selected {\n    color: #FBFBFB;\n    text-decoration: none; }\n  #ilpMainNav li.nav-item :hover a {\n    color: #FBFBFB; }\n\n#ilpMainNav ul#loggedin {\n  margin-right: 0.3rem; }\n\n#ilpMainNav li.nav-item.user {\n  text-align: right;\n  padding: 0.1rem 0.1rem 0 0 !important;\n  margin-right: 0;\n  border: none !important;\n  font-family: \"Just Another Hand\", cursive;\n  text-transform: capitalize;\n  font-size: 2.2rem;\n  letter-spacing: 1px;\n  font-weight: light;\n  background-color: none !important;\n  border: none;\n  width: auto; }\n  #ilpMainNav li.nav-item.user a.username {\n    display: inline !important;\n    padding-left: 0.1rem !important;\n    padding-right: 0.2rem !important; }\n  #ilpMainNav li.nav-item.user :hover {\n    background-color: none; }\n  #ilpMainNav li.nav-item.user img {\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);\n    overflow: hidden;\n    border-radius: 50%;\n    display: inline;\n    height: 42px; }\n\n#ilpMainNav li.nav-item.active, #ilpMainNav li.nav-item:hover {\n  background-color: #5D0E77;\n  color: #FBFBFB;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }\n  #ilpMainNav li.nav-item.active a, #ilpMainNav li.nav-item:hover a {\n    color: #FBFBFB; }\n\n#ilpMainNav li.nav-item.disabled {\n  background-color: none;\n  color: rgba(0, 0, 0, 0.5);\n  transition: none; }\n  #ilpMainNav li.nav-item.disabled a {\n    color: rgba(0, 0, 0, 0.3);\n    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n    transition: none; }\n    #ilpMainNav li.nav-item.disabled a :hover {\n      color: rgba(0, 0, 0, 0.3);\n      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n      transition: none; }\n  #ilpMainNav li.nav-item.disabled :hover {\n    background-color: none;\n    color: rgba(0, 0, 0, 0.3);\n    transition: none; }\n\n#ilpMainNav button.navbar-toggle {\n  margin: 0;\n  padding: 6px 8px 0 8px; }\n\n#ilpMainNav span.hamburger {\n  font-size: 28px;\n  padding: 0 8px !important; }\n"
+
+/***/ },
+
+/***/ 718:
+/***/ function(module, exports) {
+
+	module.exports = "<h3>About Component</h3>\n<p>This is the about component!</p>"
+
+/***/ },
+
+/***/ 719:
+/***/ function(module, exports) {
+
+	module.exports = "<h3>GitHub Browser</h3>\n\n<input type=\"text\" #repoName placeholder=\"Search Github Orgs\">\n<button (click)=\"searchForOrg(repoName.value)\">Search Orgs</button>\n\n<router-outlet></router-outlet>\n"
+
+/***/ },
+
+/***/ 720:
+/***/ function(module, exports) {
+
+	module.exports = "<h2>{{ repoDetails.full_name }}</h2>\n\n<pre>this.repoDetails = {{ repoDetails | json }}</pre>\n"
+
+/***/ },
+
+/***/ 721:
+/***/ function(module, exports) {
+
 	module.exports = "<h3>Repo list</h3>\n<ul>\n\t<li *ngFor=\"let repo of repos | async\">\n    <a [routerLink]=\"['/github', repo.owner.login, repo.name]\">\n      {{ repo.name }}\n    </a>\n  </li>\n</ul>\n\n<router-outlet></router-outlet>\n"
 
 /***/ },
 
-/***/ 745:
+/***/ 750:
 /***/ function(module, exports) {
 
 	module.exports = ""
 
 /***/ },
 
-/***/ 746:
+/***/ 751:
 /***/ function(module, exports) {
 
 	module.exports = ""
 
 /***/ },
 
-/***/ 747:
+/***/ 752:
 /***/ function(module, exports) {
 
 	module.exports = ""
 
 /***/ },
 
-/***/ 748:
+/***/ 756:
 /***/ function(module, exports) {
 
-	module.exports = ""
-
-/***/ },
-
-/***/ 749:
-/***/ function(module, exports) {
-
-	module.exports = "h3 {color:purple;}"
+	module.exports = "body {\n  margin: 0; }\n"
 
 /***/ }
 
